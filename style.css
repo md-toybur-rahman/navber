@@ -1,0 +1,44 @@
+nav{
+    background-color: antiquewhite;
+    height: 50px;
+    display: flex;
+    justify-content: right;
+}
+nav > ul{
+    display: flex;
+    align-items: center;
+}
+li{
+    list-style: none;
+    margin-right: 30px;
+    
+    
+}
+ul li a{
+    text-decoration: none;
+    color: Black;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: .5s ease;
+}
+ul li a:hover{
+    background-color: lightgray;
+}
+
+nav li .dropdown{
+    display: none;
+    position: absolute;
+    background-color: lightcoral;
+    width: 150px;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+.dropdown li{
+    margin-bottom: 10px;
+}
+
+nav li:hover .dropdown{
+    display: block;
+}
